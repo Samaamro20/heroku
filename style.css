@@ -1,0 +1,281 @@
+body{
+     margin: 0;
+     padding: 0;
+     background: #c4c4c4;
+}
+ nav{
+     overflow: hidden;
+     background-color: #333;
+}
+ #logo{
+     float: left;
+     text-decoration: none;
+     height:15px;
+     width:30px;
+}
+ #copyright{
+     text-decoration: none;
+     text-align: center;
+     float: left;
+}
+ nav a{
+     float: right;
+     text-decoration: none;
+     padding: 10px;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 14px 16px;
+     font-size: 20px;
+     border-radius: 4px;
+}
+ nav a:hover {
+     background-color: #ddd;
+     color: black;
+}
+ nav a.active {
+     background-color: #4CAF50;
+     color: white;
+}
+#nav_img{
+    height:30px;
+    width: 40px;
+}
+ header{
+     background-image: url(http://www.clker.com/cliparts/1/3/c/7/14523854441990438377orange-sky.jpg);
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size:cover;
+     height: -webkit-fill-available;
+}
+ h1{
+     text-align: center;
+     padding-top: 15%;
+     font-size: 50pt;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+ h2 p{
+     text-decoration: none;
+     color: black;
+     text-align:center;
+     margin-left: 15%;
+     margin-right: 15%;
+}
+ span{
+     text-decoration: none;
+     color: black;
+     margin-left: 42%;
+     margin-right: 30%;
+     color: black;
+     padding:4px 5px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 15pt;
+}
+ section{
+     background-size:cover;
+     height: -webkit-fill-available;
+     margin: auto;
+     padding: 20px;
+}
+ input[type=text], textarea{
+     width: 98%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+     box-sizing: border-box;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+}
+ #submitButton{
+     background-color: #b23b22;
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 10px;
+     cursor: pointer;
+     margin-left:40%;
+}
+ .form-container{
+     border-radius: 5px;
+     background-color: #f2f2f2;
+     padding: 20px;
+     width: 35%;
+     margin-top: 50px;
+     margin-bottom:50px;
+     margin-left: auto;
+     margin-right: auto;
+}
+ @media only screen and (max-width: 600px) {
+     .form-container{
+         width: 100%
+    }
+}
+ #contactHeader {
+     font-size: 20px;
+     font-weight: bold;
+     margin-left: 40%;
+}
+/*START USER STORies*/
+ .paragraph-about{
+     width: 100%;
+     high: auto;
+     text-align: center;
+     color: blue;
+     font-size: 34px;
+     padding-top: 50px;
+     padding-bottom: 100px;
+     margin-bottom: 0;
+}
+/*END USER STORies*/
+/*################## ## START TEAM PRO ## ##################*/
+/*Start MIN container*/
+ .container{
+     position: relative;
+     width:90%;
+     height: auto;
+     margin: 40px auto 0;
+     display: grid;
+     grid-template: 1fr 1fr 1fr 1fr;
+     grid-auto-rows: 400px;
+     grid-gap: 40px;
+     padding-top: 10%;
+     padding-bottom: 10%;
+}
+ @media screen and (min-width:700px){
+     .container{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-auto-rows: 400px;
+         grid-gap: 40px;
+    }
+}
+/*Start MIN card */
+ .container .card{
+     position: inherit;
+     background: gray;
+     overflow: hidden;
+     border-radius: 10px;
+     transition: 0.5s;
+}
+/* card hover */
+ .container .card:hover{
+     transform: translateY(-20px);
+}
+/* Start img-box "img div" */
+ .container .card .img-box{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     transition: 0.5s;
+}
+/* img-box hover*/
+ .container .card:hover .img-box{
+     opacity: 0.5;
+}
+/* img size */
+ .container .card .img-box img{
+     width: 100%;
+}
+/* Start content */
+ .container .card .content{
+     position: absolute;
+     width: 100%;
+     height: 60%;
+     bottom: -100%;
+     padding: 0;
+     padding-top: 10px;
+    /*padding btween top and text */
+     box-sizing: border-box;
+     text-align: center;
+     transition: 0.5s;
+}
+/* content hover */
+ .container .card:hover .content{
+     bottom: 0;
+}
+/* content effect */
+ .container .card:nth-child(1) .content{
+     background: linear-gradient(0deg, orange, transparent);
+}
+ .container .card:nth-child(2) .content{
+     background: linear-gradient(0deg, orange, transparent);
+}
+ .container .card:nth-child(3) .content{
+     background: linear-gradient(0deg, orange, transparent);
+}
+ .container .card:nth-child(4) .content{
+     background: linear-gradient(0deg, orange, transparent);
+}
+/* header text "user name" */
+ .container .card .content h2{
+     margin: 0 0 10px;
+     padding: 0;
+     color: white;
+     font-size: 24px;
+}
+/* header text "major" */
+ .container .card .content h2 span{
+     color:rgb(228, 214, 15);
+     font-size: 20px;
+}
+/* paragraph text */
+ .container .card .content p{
+     margin: 0;
+     padding: 0;
+     color: white;
+     font-size: 20px;
+}
+/* min list */
+ .container .card .content ul{
+     display: flex;
+     margin: 20px 0 0;
+     padding: 0;
+     align-items: center;
+     justify-content: center;
+}
+/* chiled list */
+ .container .card .content ul li{
+     list-style: none;
+}
+/* list anchor */
+ .container .card .content ul a{
+     color: #fff;
+     padding: 0 10px;
+     font-size: 22px;
+     transition: 0.5s;
+}
+/*################## ## END TEAM PRO ## ##################*/
+ .paragraph-about{
+     width: 100%;
+     high: auto;
+     text-align: left;
+     color: #92311a;
+     font-size: 34px;
+     padding-top: 50px;
+     padding-bottom: 100px;
+     margin-bottom: 0;
+     font-family: 'Josefin Sans', sans-serif;
+     display: flex;
+     justify-content: center;
+     flex-direction: row-reverse;
+    /* border: 3px solid red;
+     */
+}
+ .paragraph-about p{
+     width: 50%;
+}
+ .paragraph-about img{
+     width: auto;
+     height: 100%;
+     border: 2px solid pink;
+     resize: both;
+}
+#about h2{
+  text-align: center;
+  margin: auto;
+}
